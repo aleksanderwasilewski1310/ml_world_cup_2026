@@ -25,13 +25,14 @@ The entire application is fully containerized, secure (non-root execution), and 
 world_cup_2026/
 ├── datasets/
 │   └── fifa/                 # Downloaded Kaggle CSVs (train.csv, test.csv)
+├── docker/
+│   ├── Dockerfile            # Multi-stage container definition using 'uv'
 ├── modules/
 │   ├── data_loader.py        # Kaggle API authentication and data fetching
 │   ├── data_processor.py     # Data cleaning, imputation, and feature engineering
 │   └── model_trainer.py      # Random Forest training and prediction logic
 ├── .env                      # Environment variables (Kaggle API Token)
 ├── docker-compose.yml        # Docker services configuration
-├── Dockerfile                # Multi-stage container definition using 'uv'
 ├── main.py                   # FastAPI Application Entrypoint
 ├── requirements.txt          # Python dependencies
 └── README.md                 # Project documentation
