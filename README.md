@@ -29,11 +29,14 @@ world_cup_2026/
 │   ├── Dockerfile            # Multi-stage container definition using 'uv'
 ├── modules/
 │   ├── data_loader.py        # Kaggle API authentication and data fetching
-│   ├── data_processor.py     # Data cleaning, imputation, and feature engineering
-│   └── model_trainer.py      # Random Forest training and prediction logic
+│   └── data_processor.py     # Data cleaning, imputation, and feature engineering
+├── tests/
+│   ├── __init__.py
+│   └── test_random_forest.py # Unit tests for random_forest.py module
 ├── .env                      # Environment variables (Kaggle API Token)
 ├── docker-compose.yml        # Docker services configuration
 ├── main.py                   # FastAPI Application Entrypoint
+├── random-forest.py          # Random Forest training and prediction logic
 ├── requirements.txt          # Python dependencies
 └── README.md                 # Project documentation
 ```
@@ -136,7 +139,7 @@ python -m pytest -v
 ```
 
 # 🛠 Technology Stack
-Language: Python 3.13
+Language: Python 3.11
 
 Data Processing: Pandas, NumPy
 
